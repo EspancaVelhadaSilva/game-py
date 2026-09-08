@@ -69,3 +69,8 @@ class Passaro:
                     self.imagem = self.IMGS[1]
                 elif self.contagem_imagem < self.TEMPO_ANIMACAO*4 + 1:
                     self.imagem = self.IMGS[0]
+
+
+                    if self.angulo <= -80:
+                            self.imagem = self.IMGS[1]
+                            self.contagem_imagem = self.TEMPO_ANIMACAO*2
